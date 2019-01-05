@@ -1,0 +1,36 @@
+{
+  "name": "electron-puppeteer-react-boilerplate",
+  "version": "0.1.0",
+  "main": "main/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "lint": "eslint renderer/* main/*",
+    "lint-fix": "eslint renderer/* main/* --fix"
+  },
+  "build": {
+    "appId": "com.electron.quickstart",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "electron-is-dev": "^1.0.1",
+    "electron-next": "^3.1.5",
+    "next": "^7.0.2",
+    "puppeteer": "^0.12.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.4",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3"
+  }
+}
